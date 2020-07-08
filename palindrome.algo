@@ -1,0 +1,13 @@
+FUNCTION is_palindrome(new str : STRING, reverse str : STRING) : STRING;
+
+BEGIN
+ IF (new str = reverse str) THEN
+   RETURN true;
+ 
+ IF (new str <> reverse str) THEN
+ RETURN false;
+ ELSE(new str< reverse str+1) THEN
+ RETURN (new str+1, reverse str-1) 
+  END_IF
+  RETURN true; 
+END
